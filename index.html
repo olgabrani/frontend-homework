@@ -1,0 +1,131 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jquery tutorial</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.blue-pink.min.css" />
+        <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <style>
+            .mdl-card__media { text-align: center; padding: 20px 0;}
+            .mdl-card__supporting-text h5 { margin: 10px 0; }
+            .mdl-card__supporting-text button { margin: 10px 0; }
+            .mdl-card__supporting-text .extras { display: none;}
+            .mdl-card ul { padding-left: 16px;}
+        </style>
+        <script>
+            $(document).ready(function(){
+                $('.mdl-card button').click(function(e) {
+                    $(this).siblings('.extras').toggle();
+                })            
+            })
+        </script>
+
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+          <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              <span class="mdl-layout-title">Front-end homeworks</span>
+            </div>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+              <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Javascript</a>
+              <a href="#fixed-tab-2" class="mdl-layout__tab">CSS/Animations</a>
+              <a href="#fixed-tab-3" class="mdl-layout__tab">Stuff</a>
+            </div>
+          </header>
+          <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+              <div class="page-content">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-card mdl-shadow--4dp">
+                                <div class="mdl-card__media"><img src="http://images.clipartpanda.com/carousel-clipart-large_carousel.png"  height="157" border="0" alt="" style="padding:10px;">
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <h5>Simple carousel</h5>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Assume you have a list of 5 images, each one with dimensions 300x200px.<br>
+                                    Create a simple carousel, with 2 control buttons that move the main image back and forth.<br>
+                                    When the first image is visible, the "back" button should be disabled. When the last image is visible, the "front" button should be disabled.<br>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                        Extras
+                                    </button>
+                                    <div class="extras">
+                                        <p>For extra points:</p>
+                                        <ul>
+                                            <li>Modify your code to work with X images</li>
+                                            <li>Use infinite back and forth buttons</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                            <div class="mdl-card mdl-shadow--4dp">
+                                <div class="mdl-card__media"><img src="images/modal.png" height="157" border="0"
+                               alt="" style="padding:10px;">
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <h5>Modal</h5>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Create a link that when clicked a modal is launched.<br>
+                                    To close this modal you have to click on a "close" icon.<br>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                        Extras
+                                    </button>
+                                    <div class="extras">
+                                        <p>For extra points:</p>
+                                        <ul>
+                                            <li>Close the modal on clicked outside its area</li>
+                                            <li>Use different animation methods to open the modal</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--4-col">
+                           <div class="mdl-card mdl-shadow--4dp">
+                                <div class="mdl-card__media"><img src="https://d13yacurqjgara.cloudfront.net/users/31752/screenshots/1562713/hello-world.png" height="157" border="0"
+                               alt="" style="padding:10px;">
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <h5>JQuery plugin</h5>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Create a simple JQuery plugin, that once included in a webpage, will alert an annoying "hello world" on document ready.<br>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                        Extras
+                                    </button>
+                                    <div class="extras">
+                                        <p>For extra points:</p>
+                                        <ul>
+                                            <li>Allow the plugin user to change the "hello world" with a custom one</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+              <div class="page-content">Coming soon! Stay tuned</div>
+            </section>
+             <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+              <div class="page-content">Coming soon! Stay tuned</div>
+            </section>
+          </main>
+        </div>
+      </body>
+</html>
